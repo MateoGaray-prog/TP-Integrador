@@ -252,6 +252,22 @@ h2 {
     justify-content: center;
     align-items: baseline;
 }
+.div-redes-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-redes-contacto ul li a{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    padding: 10px;
+}
+.creditos-contacto{
+    display: flex;
+    margin-top: 20px;
+}
 
 
 
@@ -265,8 +281,6 @@ h2 {
     align-items: baseline;
 }
 }
-
-
 
 
 .contacto-encabezado{
