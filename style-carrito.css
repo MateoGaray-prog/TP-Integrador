@@ -39,6 +39,13 @@ header {
     color: #000;
     margin-left: 10px;
     font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav a{
+    text-decoration: none;
+    list-style: none;
 }
 
 .logo img {
