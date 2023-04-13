@@ -1,8 +1,9 @@
 const productos = [
     {
-      id: "remera-01",
-      titulo:"Remera-01",
-      categorias:{
+        imagen: "remera-01.jpg",
+        id: "remera-01",
+        titulo:"Remera-01",
+        categorias:{
         nombre:"Remeras",
         id: "remeras",
 
@@ -10,6 +11,7 @@ const productos = [
       precio: 2590     
     },
     {
+        imagen: "remera-02.jpg",
         id: "remera-02",
         titulo:"Remera-02",
         categorias:{
@@ -20,6 +22,7 @@ const productos = [
         precio: 990     
     },
     {
+        imagen: "remera-03.jpg",
         id: "remera-03",
         titulo:"Remera-03",
         categorias:{
@@ -30,6 +33,7 @@ const productos = [
         precio: 990     
     },
     {
+        imagen: "remera-04.jpg",
         id: "remera-04",
         titulo:"Remera-04",
         categorias:{
@@ -51,6 +55,7 @@ const productos = [
         precio: 1990     
     },
     {
+        imagen: "pantalon-02.jpg",
         id: "pantalon-02",
         titulo:"Pantalon-02",
         categorias:{
@@ -61,6 +66,7 @@ const productos = [
         precio: 1990     
     },
     {
+        imagen: "pantalon-03.jpg",
         id: "pantalon-03",
         titulo:"Pantalon-03",
         categorias:{
@@ -71,6 +77,7 @@ const productos = [
         precio: 1990     
     },
     {
+        imagen: "pantalon-04.jpg",
         id: "pantalon-04",
         titulo:"Pantalon-04",
         categorias:{
@@ -81,7 +88,8 @@ const productos = [
         precio: 1990     
     },
     {
-        id: "zapatilla-1",
+        imagen: "zapatilla-01.jpg",
+        id: "zapatilla-01",
         titulo:"Zapatilla-01",
         categorias:{
           nombre:"Zapatillas",
@@ -91,6 +99,7 @@ const productos = [
         precio: 7490     
     },
     {
+        imagen: "zapatilla-02.jpg",
         id: "zapatilla-02",
         titulo:"zapatilla-02",
         categorias:{
@@ -101,6 +110,7 @@ const productos = [
         precio: 7490     
     },
     {
+        imagen: "zapatilla-03.jpg",
         id: "zapatilla-03",
         titulo:"Zapatilla-03",
         categorias:{
@@ -111,6 +121,7 @@ const productos = [
         precio: 7490     
     },
     {
+        imagen: "zapatilla-04.jpg",
         id: "zapatilla-04",
         titulo:"Zapatilla-04",
         categorias:{
@@ -163,7 +174,6 @@ function actualizarNumerito (){
   let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0 );
   numerito.innerText = nuevoNumerito;
 }
-
 
 
 
