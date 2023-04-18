@@ -4,10 +4,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
 }
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 ul{
@@ -24,7 +26,12 @@ header {
 }
 
 h2 {
-    color: #278fa1;
+    color: #78866b;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
 }
 /*----------------------------------------HEADER------------------------------------------*/
 
@@ -51,10 +58,13 @@ h2 {
     font-size: 20px;
 }
 
+.logo h1:hover{
+    color: #78866b;
+}
+
 .logo img {
     height: 60px;
     width: 60px;
-    border-radius: 15px;
     margin: 0 10px 0 60px;
 }
 
@@ -69,6 +79,7 @@ h2 {
 
 .menu li a{
     color: #000;
+    font-size: 16px;
     text-decoration: none;
     transition: all 0.3s;
     font-family: 'Heebo', sans-serif;
@@ -76,15 +87,14 @@ h2 {
 
 .menu li a:hover {
     padding: 5px 10px;
-    background-color: #278fa1;
+    background-color: #78866b;
     color: #fff;
-    border-radius: 15px;
 }
 
 /*-----------------------------------------SECTION HOME-----------------------------------*/
 
 #home {
-    background-image: url(fondo.jpg);  
+    background-image: url(../Imagenes/fondo.jpg);  
     background-size: cover;
     background-position: auto;
     height: 100vh;
@@ -99,7 +109,6 @@ h2 {
 #home h1 {
     font-size: 50px;
     color: #fff;
-    border-radius: 15px;
     padding-left: 10px;
 }
 
@@ -117,14 +126,15 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
 }
 
 .remeras-encabezado {
     font-size: 40px;
-    color: #278fa1;
+    color: #78866b;
     margin-bottom: 100px;
+    margin-left: 2em;
 }
 
 .remeras-contenedor {
@@ -147,14 +157,12 @@ h2 {
     width: 200px;
     height: 200px;
 }
-.remera-4 img{
-    width: 200px;
-    height: 200px;
-}
 
 .precio-producto {
-    font-size: 25px;
+    font-size: 1.5em;
 }
+
+
 
 /*-----------------------------------Seccion Pantalones -----------------------------*/
 
@@ -163,14 +171,15 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
 }
 
 .pantalones-encabezado {
     font-size: 40px;
-    color: #278fa1;
+    color: #78866b;
     margin-bottom: 100px;
+    margin-left: 2em;
 }
 
 .pantalones-contenedor {
@@ -193,10 +202,6 @@ h2 {
     width: 200px;
     height: 200px;
 }
-.pantalon-4 img{
-    width: 200px;
-    height: 200px;
-}
 
 /*--------------------------------Section Zapatillas-----------------------------*/
 
@@ -205,14 +210,15 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
 }
 
 .zapatillas-encabezado {
     font-size: 40px;
-    color: #278fa1;
+    color: #78866b;
     margin-bottom: 100px;
+    margin-left: 2em;
 }
 
 .zapatillas-contenedor {
@@ -230,18 +236,14 @@ h2 {
     width: 200px;
     height: 200px;
 }
+
 .zapatilla-3 img{
     width: 200px;
     height: 200px;
 }
 
-.zapatilla-4 img{
-    width: 200px;
-    height: 200px;
-}
 
-/*--------------------------------Section Contacto-----------------------------*/
-
+/*----------------------------------------------------CONTACTO-------------------------------------------*/
 #contacto{
     height: 100vh;
     width: 100vw;
@@ -266,10 +268,9 @@ h2 {
 }
 .creditos-contacto{
     display: flex;
+    flex-direction: column;
     margin-top: 20px;
 }
-
-
 
 .div-contacto-1{
     width: 100vw;
@@ -278,10 +279,10 @@ h2 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
-    align-items: baseline;
+    background-color: #ccc;
+    padding: 100px;
+    align-items: center;
 }
-}
-
 
 .contacto-encabezado{
     font-size: 2em;
@@ -297,13 +298,14 @@ label {
 
 input[type="text"],
 input[type="email"],
-textarea {
+input[type="textarea"] {
     width: 500px;
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
     margin-bottom: 15px;
 }
+
 input[type="text"]:hover,:focus,
 input[type="email"]:hover,:focus,
 textarea:hover,:focus{
@@ -312,34 +314,43 @@ textarea:hover,:focus{
 
 button[type="submit"] {
     font-size: 16px;
-    background-color: #278fa1;
+    background-color: #78866b;
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
-#mensaje-enviado,
-#mensaje-error {
-    display: none;
-    width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
+.boton-enviar-mensaje {
+    border: 0;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    font-size: 17px;
+    padding: 5px;
+    font-weight: 400;
 }
 
-#mensaje-enviado {
-    background-color: #e6ffe6;
-    border: 1px solid #99ff99;
-    color: #006600;
+.boton-enviar-mensaje:hover {
+    background-color: #78866b;
+    color: #fff;
+    border: 0;
+    padding: .5em;
+    transition: .3s;
 }
 
-#mensaje-error {
-    background-color: #ffe6e6;
-    border: 1px solid #ff9999;
-    color: #990000;
+.dejanos-tu-mensaje{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.div-mensaje-a-enviar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 /*-------------------------------------------Footer----------------------------*/
@@ -354,9 +365,32 @@ button[type="submit"] {
     flex-direction: row;
 }
 .logo-footer{
-    height: 100px;
-    width: 100px;
-    border-radius: 15px;
+    height: 60px;
+    width: 60px;
+}
+
+.contacto-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto-personal div a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor-redes {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-redes p{
+    font-family: 'Heebo', sans-serif;
 }
 
 /*-------------------------------------------GENERAL----------------------------*/
@@ -364,10 +398,36 @@ button[type="submit"] {
 .producto-agregar {
     border: 0;
     cursor: pointer;
-    background-color: #278fa1;
+    background-color: #444;
     color: #fff;
     font-size: 20px;
-    border-radius: 10px;
     padding: 5px;
     font-weight: 400;
+    margin-top: 10px;
+}
+
+.producto-agregar:hover{
+    background-color: #78866b;
+    font-weight: bolder;
+}
+
+.producto-agregar:active{
+    background-color: #78866b;
+    font-size: 16px;
+    transition: .1s;
+}
+.bi-instagram {
+    font-size: 20px;
+    color: rgb(211 42 167);
+}
+
+.bi-envelope-open{
+    font-size: 20px;
+    color:#ff0c0c;
+}
+
+.bi-facebook,
+.bi-linkedin {
+    font-size: 20px;
+    color: #196ac7;
 }
