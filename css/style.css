@@ -95,7 +95,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 .novedades-encabezado{
@@ -116,6 +116,15 @@ h2 {
 .novedades-productos img{
     width: 270px;
     height: 480px;
+}
+
+.boton-flecha{
+    width: 50%;
+}
+
+.flecha{
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 /*-----------------------------------------------CONTACTO-------------------------------------------*/
