@@ -29,21 +29,15 @@ h2 {
     color: #78866b;
 }
 
-img {
-    max-width: 150px;
-    max-height: 150px;
-}
 
 
 /*----------------------------------------HEADER------------------------------------------*/
 
 .nav {
     display: flex;
-    margin: 10px;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
+    background-color: #000;
 }
 .nombre-estilo{
     text-decoration: none;
@@ -55,13 +49,13 @@ img {
 }
 
 .logo h1{
-    color: #000;
+    color: #fff;
     margin-left: 10px;
     font-size: 20px;
 }
 
 .logo h1:hover{
-    color: #78866b;
+    color: #fff;
 }
 
 .logo img {
@@ -80,7 +74,7 @@ img {
 }
 
 .menu li a{
-    color: #000;
+    color: #fff;
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s;
@@ -105,37 +99,22 @@ img {
 }
 
 .remeras-encabezado {
-    font-size: 40px;
-    color: #78866b;
-    margin-bottom: 100px;
-    margin-left: 2em;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.remeras-encabezado p{
+    font-size: 3.5em;
+    color: #333;
+    margin: 50px 1em 0 0;
 }
 
 .remeras-contenedor {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-}
-.remera-1 img {
-    z-index: 40;
-    position: relative;
-}
-.remera-1 img:hover{
-    max-width: 200px;
-    max-height: 200px;
-}
- 
-
-.remera-1 img:focus,
-.remera-2 img:hover,
-.remera-3 img:hover,
-.remera-4 img:hover{
-    width: 300px;
-    height: 300px;
-}
-
-.precio-producto {
-    font-size: 1.5em;
+    align-items: end;
 }
 
 
@@ -151,33 +130,27 @@ img {
     text-align: center;
 }
 
+
 .pantalones-encabezado {
-    font-size: 40px;
-    color: #78866b;
-    margin-bottom: 100px;
-    margin-left: 2em;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.pantalones-encabezado p{
+    font-size: 3.5em;
+    color: #333;
+    margin: 50px 1em 0 0;
 }
 
 .pantalones-contenedor {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: end;
 }
 
-.pantalon-1 img{
-    width: 200px;
-    height: 200px;
-}
 
-.pantalon-2 img{
-    width: 200px;
-    height: 200px;
-}
-
-.pantalon-3 img{
-    width: 200px;
-    height: 200px;
-}
 
 /*--------------------------------Section Zapatillas-----------------------------*/
 
@@ -188,36 +161,38 @@ img {
     justify-content: center;
     align-items: start;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .zapatillas-encabezado {
-    font-size: 40px;
-    color: #78866b;
-    margin-bottom: 100px;
-    margin-left: 2em;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.zapatillas-encabezado p{
+    font-size: 3.5em;
+    color: #333;
+    margin: 50px 1em 0 0;
 }
 
 .zapatillas-contenedor {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: end;
 }
 
-.zapatilla-1 img{
-    width: 200px;
-    height: 200px;
+/*---------------------------------------------ESTILOS GENERALES----------------------------------------*/
+
+.imagen {
+    width: 270px;
+    height: 480px;
 }
 
-.zapatilla-2 img{
-    width: 200px;
-    height: 200px;
+.precio-producto {
+    font-size: 1em;
 }
-
-.zapatilla-3 img{
-    width: 200px;
-    height: 200px;
-}
-
 
 /*----------------------------------------------------CONTACTO-------------------------------------------*/
 #contacto{
@@ -339,6 +314,7 @@ button[type="submit"] {
 
 /*-------------------------------------------Footer----------------------------*/
 
+
 .footer-contenedor{
     display: flex;
     width: 100vw;
@@ -347,10 +323,12 @@ button[type="submit"] {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 50px;
+    background-color: #ccc;
 }
 .logo-footer{
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
 }
 
 .contacto-personal {
@@ -359,6 +337,11 @@ button[type="submit"] {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 33%;
+}
+
+.contacto-personal div p{
+    font-size: 15px;
 }
 
 .contacto-personal div a{
@@ -375,6 +358,10 @@ button[type="submit"] {
 
 .contenedor-redes p{
     font-family: 'Heebo', sans-serif;
+}
+
+.redes-personales a i{
+    margin: 5px;
 }
 
 /*-------------------------------------------GENERAL----------------------------*/
@@ -395,7 +382,9 @@ button[type="submit"] {
     font-weight: bolder;
 }
 
-.producto-agregar:active{
+.producto-agregar:active,
+.producto-agregar-2:active,
+.producto-agregar-3:active{
     background-color: #78866b;
     font-size: 16px;
     transition: .1s;
