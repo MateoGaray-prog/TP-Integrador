@@ -25,7 +25,6 @@ const botonCancelar = document.querySelector("#boton-cancelar");
 const botonCancelar2 = document.querySelector("#boton-cancelar-2");
 const botonSiguiente = document.querySelector("#boton-siguiente");
 const botonAtras = document.querySelector("#boton-atras");
-const botonConfirmarCompra = document.querySelector("#boton-confirmar-compra");
 
 function cargarproductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0){
@@ -146,13 +145,15 @@ function cancelar() {
     header.classList.remove("index");
     header.classList.remove("fixed");
     main.classList.remove("padding0");
-    contenedorCarritoAcciones.classList.remove("disabled");
 }
 
 botonCancelar.addEventListener("click", cancelar);
 botonCancelar2.addEventListener("click", cancelar);
 
+
+
 botonSiguiente.addEventListener("click", ()=>{
+    
     const nombre = document.querySelector("#nombre").value;
     const apellido = document.querySelector("#apellido").value;
     const celular = document.querySelector("#celular").value;
@@ -168,11 +169,9 @@ botonSiguiente.addEventListener("click", ()=>{
         }, 3000);
 
     } else {
-
         grande.style.transform = `translateX(-50%)`;
         botonAtras.classList.remove("activo");
         botonSiguiente.classList.add("activo");
-
     }
 });
 
@@ -183,41 +182,43 @@ botonAtras.addEventListener("click", ()=>{
 
 });
 
+
+
 const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.classList.add("disabled"); 
-
-   const serviceID = 'default_service';
-   const templateID = 'template_qpml0ck';
    const textoCompra = document.querySelector("#texto-compra");
    const spinner = document.querySelector("#spinner");
+   const serviceID = 'default_service';
+   const templateID = 'template_qpml0ck';
 
+   botonCancelar2.classList.add("disabled");
+   botonAtras.classList.add("disabled");
+   botonSiguiente.classList.add("disabled");
+   btn.value = 'COMPRANDO';
     textoCompra.classList.add("disabled");
     spinner.classList.remove("disabled");
 
    emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-         
-        spinner.classList.remove("disabled");
-          
+    .then(() => { 
+
         setTimeout(() => {
+            spinner.classList.remove("disabled");
+            wizard.classList.add("disabled");
             header.classList.remove("blur");
             header.classList.remove("index");
             header.classList.remove("fixed");
             main.classList.remove("padding0");
             contendorCarrito.classList.remove("disabled");
-            tituloCarrito.classList.remove("disabled");
             vaciarCarrito();
             contenedorCarritoVacio.classList.add("disabled");
             contenedorCarritoComprado.classList.remove("disabled");
-            wizard.classList.add("opacity");
-        }, 1000);
+        }, 2000);
+        
     }, (err) => {
-      btn.value = 'REINTENTAR COMPRA';
-        alert(JSON.stringify(err));
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
     });
 });
