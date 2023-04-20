@@ -24,15 +24,10 @@ header {
 
 .nav {
     display: flex;
-    margin: 10px;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    border-top: solid 2px #78866b;
-    border-bottom: solid 2px #78866b;
+    background-color: #000;
 }
-
 .nombre-estilo{
     text-decoration: none;
     list-style: none;
@@ -43,17 +38,13 @@ header {
 }
 
 .logo h1{
-    color: #000;
+    color: #fff;
     margin-left: 10px;
     font-size: 20px;
 }
 
 .logo h1:hover{
-    color: #78866b;
-}
-
-.nav a {
-    text-decoration: none;
+    color: #fff;
 }
 
 .logo img {
@@ -71,18 +62,28 @@ header {
     margin: 20px;
 }
 
-.menu li i{
-    font-size: 18px
+.menu li a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-family: 'Heebo', sans-serif;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background-color: #78866b;
+    color: #fff;
 }
 
 .boton-carrito {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
 .active {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 16px;
     font-family: 'Heebo', sans-serif;
     transition: all .3s;
@@ -97,7 +98,7 @@ header {
 /*--------------------------------------Main-------------------------------------*/
 
 main {
-    padding: 100px;
+    padding: 80px 100px 100px 100px;
     height: 100vh;
     align-items: center;
 }
@@ -109,12 +110,11 @@ main {
 }
 
 .contenedor-carrito {
-    border-top: solid 1px #78866b;
-    border-bottom: solid 1px #78866b;
-    border-radius: 50px;
-    height: 100%;
+    border-bottom: solid 1px #aaa;
+    height: 95%;
     max-height: 750px;
     padding: 20px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -122,11 +122,12 @@ main {
 
 .titulo-carrito {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    font-size: 1.3em;
 }
 
 .titulo-carrito h1 {
-    color: #000;
+    color: #333;
 }
 .carrito-vacio,
 .carrito-comprado {
@@ -140,13 +141,15 @@ main {
 }
 
 .carrito-producto-imagen {
-    width: 150px;
+    width: 80px;
+    height: 142px;
 }
 
 .carrito-producto {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .carrito-producto-eliminar{
@@ -164,7 +167,6 @@ main {
     padding-left: 40px;
     padding-right: 40px;
     margin-top: .5em;
-    margin-bottom: 2em;
 }
 
 .carrito-acciones-vaciar{  
