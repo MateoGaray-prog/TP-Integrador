@@ -1,135 +1,135 @@
 const productos = [
     {
       id: "remera-01",
-      titulo:"Remeras Clásicas Nine Pack x3",
-      imagen: "./Imagenes/remera-01.jpg",
+      titulo:"Remera Kritikal Roja",
+      imagen: "./Imagenes/Imagenes-hombres/remera-01.jpg",
       categorias:{
         nombre:"Remeras",
         id: "remeras",
 
       },
-      precio: 900     
+      precio: 7590     
     },
     {
         id: "remera-02",
-        titulo:"Remera Puma Blanca",
-        imagen: "./Imagenes/remera-02.jpg",
+        titulo:"Remera Oversize Negra",
+        imagen: "./Imagenes/Imagenes-hombres/remera-02.jpg",
         categorias:{
           nombre:"Remeras",
           id: "remeras",
   
         },
-        precio: 1200     
+        precio: 7590     
     },
     {
         id: "remera-03",
-        titulo:"Remera Puma Azul",
-        imagen: "./Imagenes/remera-03.jpg",
+        titulo:"Remera Oversize Blanca",
+        imagen: "./Imagenes/Imagenes-hombres/remera-03.jpg",
         categorias:{
           nombre:"Remeras",
           id: "remeras",
   
         },
-        precio: 1500     
+        precio: 7590     
     },
     {
         id: "remera-04",
-        titulo:"Remera Puma Roja",
-        imagen: "./Imagenes/remera-04.jpg",
+        titulo:"Remera Onasaez Blanca",
+        imagen: "./Imagenes/Imagenes-hombres/remera-04.jpg",
         categorias:{
           nombre:"Remeras",
           id: "remeras",
   
         },
-        precio: 1100     
+        precio: 7590     
     },
     {
         id: "pantalon-01",
-        titulo:"Pantalones Nine Pack x3",
-        imagen: "./Imagenes/pantalon-01.jpg",
+        titulo:"Pantalone Largo Puma",
+        imagen: "./Imagenes/Imagenes-hombres/pantalon-01.jpg",
         categorias:{
           nombre:"Pantalones",
           id: "pantalones",
   
         },
-        precio: 2000     
+        precio: 8790     
     },
     {
         id: "pantalon-02",
-        titulo:"Pantalon Reebok",
-        imagen: "./Imagenes/pantalon-02.jpg",
+        titulo:"Pantalon Jogging Largo",
+        imagen: "./Imagenes/Imagenes-hombres/pantalon-02.jpg",
         categorias:{
           nombre:"Pantalones",
           id: "pantalones",
   
         },
-        precio: 2500     
+        precio: 8790     
     },
     {
         id: "pantalon-03",
-        titulo:"Pantalon Puma",
-        imagen: "./Imagenes/pantalon-03.jpg",
+        titulo:"Bermuda Oversize",
+        imagen: "./Imagenes/Imagenes-hombres/pantalon-03.jpg",
         categorias:{
           nombre:"Pantalones",
           id: "pantalones",
   
         },
-        precio: 1000     
+        precio: 6790     
     },
     {
         id: "pantalon-04",
-        titulo:"Pantalon Adidas",
-        imagen: "./Imagenes/pantalon-04.jpg",
+        titulo:"Bermuda Jean",
+        imagen: "./Imagenes/Imagenes-hombres/pantalon-04.jpg",
         categorias:{
           nombre:"Pantalones",
           id: "pantalones",
   
         },
-        precio: 1000     
+        precio: 6790     
     },
     {
         id: "zapatilla-01",
-        titulo:'Zapatiilas Adidas "P-Zero"',
-        imagen: "./Imagenes/zapatilla-01.jpg",
+        titulo:'Nike "Air Force 1"',
+        imagen: "./Imagenes/Imagenes-hombres/zapatilla-01.jpg",
         categorias:{
           nombre:"Zapatillas",
           id: "zapatillas",
   
         },
-        precio: 1000     
+        precio: 12590     
     },
     {
         id: "zapatilla-02",
-        titulo:'zapatilla-02',
-        imagen: "./Imagenes/zapatilla-02.jpg",
+        titulo:'Nike "Dunk"',
+        imagen: "./Imagenes/Imagenes-hombres/zapatilla-02.jpg",
         categorias:{
           nombre:"Zapatillas",
           id: "zapatillas",
   
         },
-        precio: 1000     
+        precio: 12590     
     },
     {
         id: "zapatilla-03",
-        titulo:"Zapatilla-03",
-        imagen: "./Imagenes/zapatilla-03.jpg",
+        titulo:'Vans "Classic"',
+        imagen: "./Imagenes/Imagenes-hombres/zapatilla-03.jpg",
         categorias:{
           nombre:"Zapatillas",
           id: "zapatillas",
   
         },
-        precio: 1000     
+        precio: 10590     
     },
     {
         id: "zapatilla-04",
-        titulo:"Zapatilla-04",
-        imagen: "./Imagenes/zapatilla-04.jpg",
+        titulo:'Puma "Rider"',
+        imagen: "./Imagenes/Imagenes-hombres/zapatilla-04.jpg",
         categorias:{
           nombre:"Zapatillas",
           id: "zapatillas",
   
         },
-        precio: 1000     
+        precio: 10590     
     }
   
 ]; 
@@ -179,8 +179,7 @@ function actualizarNumerito (){
 
 const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
    btn.value = 'Enviando...';
