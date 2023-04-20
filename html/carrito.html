@@ -18,18 +18,26 @@
     <header id="header">
 
         <nav class="nav">
-            <a class="nombre-estilo" href="index.html">
-                    <div class="logo">
+            <a href="./index.html">
+                <nav class="logo">
                     <img src="./Imagenes/logo.jpg" alt="Logo">
-                    <h1>Nine <br> Urban</h1>
-                </div>
-                </a>
+                    <h1>Nine<br>Urban</h1>
+                </nav>     
+            </a>
             <ul class="menu">
                 <li>
-                    <a class="active" href="index.html">Seguir Comprando</a>
+                    <a class="active" href="index.html">Home</a>
                 </li>
                 <li>
-                    <i class="bi bi-cart-fill"></i>                 
+                    <a class="active" href="./mujeres.html">Mujeres</a>
+                </li>
+                <li>
+                    <a class="active" href="./hombres.html">Hombres</a>
+                </li>
+                <li>
+                    <a class="boton-carrito" href="carrito.html" >
+                        <i class="bi bi-cart-fill"></i> <span class="numerito" id="numerito">0</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -66,7 +74,7 @@
         </div>
         <section id="wizard" class="wizard disabled">
             <h1>COMPRA</h1>
-            <form id="form" class="grande">
+            <div id="form" class="grande">
                 <div class="separado">
                     <div id="wizard-1" class="wizard-1">
                         <div id="wizard-1" class="wizard-1-form" >
@@ -75,7 +83,7 @@
                                     <i class="bi bi-x-lg"></i>
                                 </button>
                             </div>
-                            <div id="form" class="inputs-container">
+                            <form id="form" class="inputs-container">
                                 <div class="inputs-container-1">
                                   <p class="field">
                                     <label for="nombre">Nombre</label>
@@ -93,10 +101,10 @@
                                   </p>
                                   <p class="field">
                                     <label for="email">Email</label>
-                                    <input required type="text" autocomplete="off" name="email" id="email">
+                                    <input required type="email" autocomplete="off" name="email" id="email">
                                   </p>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -122,7 +130,7 @@
                         </form>
                     </div>
                 </div>
-            </form>
+            </div>
             <ul class="puntos">
                 <div>
                     <button id="boton-atras" class="punto activo" type="button"></button>
