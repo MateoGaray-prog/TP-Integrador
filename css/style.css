@@ -25,10 +25,6 @@ header {
     width: 100%;
 }
 
-h2 {
-    color: #78866b;
-}
-
 
 
 /*----------------------------------------HEADER------------------------------------------*/
@@ -37,7 +33,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #888;
+    background-color: #000;
 }
 .nombre-estilo{
     text-decoration: none;
@@ -49,7 +45,7 @@ h2 {
 }
 
 .logo h1{
-    color: #000;
+    color: #fff;
     margin-left: 10px;
     font-size: 20px;
 }
@@ -74,7 +70,7 @@ h2 {
 }
 
 .menu li a{
-    color: #000;
+    color: #fff;
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s;
@@ -94,7 +90,6 @@ h2 {
     flex-direction: column;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 20px;
     background-color: #fff;
 }
 
@@ -103,14 +98,15 @@ h2 {
     text-align: end;
 }
 
-.novedades-encabezado h1{
-    font-size: 3em;
-    margin: 1em 50px 0 0;
-}
-
 .novedades-productos{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.novedades-encabezado h1{
+    font-size: 3em;
+    margin: 0em 50px -2em 0;
 }
 
 .novedades-productos img{
@@ -125,6 +121,72 @@ h2 {
 .flecha{
     font-size: 20px;
     font-weight: bolder;
+}
+
+/*--------------------------------------------NOSOTROS------------------------------------------*/
+
+#nosotros {
+    margin-top: 1em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nosotros-imagenes { 
+    background-color: #fff;
+    display: flex;
+}
+
+.nosotros-imagenes img{ 
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+}
+
+.nosotros-texto{
+    max-width:400px;
+    margin-right: 2em;
+}
+
+.nosotros-texto h1{
+    font-size: 5em;
+}
+
+.nosotros-texto strong {
+    font-size: .7em;
+    color: #ff0c0c;
+}
+
+.nosotros-links {
+    margin-top: .5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nosotros-links a {
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #000;
+    border: solid 1px #000;
+    -webkit-box-shadow: 3px -3px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px -3px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px -3px 0px 0px rgba(0,0,0,0.75);
+    text-align:center;
+}
+
+.nosotros-links a:hover{
+    background-color: #ff0c0c;
+    color: #fff;
+}
+
+.nosotros-links a i{
+    font-size: 1.2em;
 }
 
 /*-----------------------------------------------CONTACTO-------------------------------------------*/
@@ -147,13 +209,14 @@ h2 {
     display: flex;
     text-decoration: none;
     list-style: none;
-    color: #000;
+    color: #fff;
     padding: 10px 0px;
 }
 .creditos-contacto{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    color: #fff;
 }
 
 .creditos-contacto strong{
@@ -162,13 +225,15 @@ h2 {
 
 
 .div-contacto-1{
-    width: 100vw;
+    width: 80vw;
+    height: 55%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
-    background-color: #ddd;
+    background-color: #222;
+    color: #fff;
     padding: 100px;
     align-items: center;
 }
@@ -190,7 +255,8 @@ input[type="email"]{
     width: 500px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    background-color: #222;
+    border: 2px solid #fff;
     margin-bottom: 15px;
 }
 
@@ -200,12 +266,12 @@ textarea:hover,:focus{
     background-color: #ddd;
 }
 
-button[type="submit"] {
-    font-size: 16px;
-    background-color: #78866b;
+#button[type="submit"] {
+    font-size: 1em;
+    background-color: #222;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
+    border: 2px solid #fff;
+    padding: 5px 10px;
     cursor: pointer;
 }
 
@@ -245,6 +311,10 @@ button[type="submit"] {
     margin-left: .3em;
 }
 
+.field{
+    color: #fff;
+}
+
 /*-------------------------------------------Footer----------------------------*/
 
 .footer-contenedor{
@@ -255,10 +325,12 @@ button[type="submit"] {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 50px;
+    background-color: #ccc;
 }
 .logo-footer{
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
 }
 
 .contacto-personal {
@@ -267,6 +339,11 @@ button[type="submit"] {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 33%;
+}
+
+.contacto-personal div p{
+    font-size: 15px;
 }
 
 .contacto-personal div a{
@@ -322,4 +399,4 @@ button[type="submit"] {
 .bi-linkedin {
     font-size: 20px;
     color: #196ac7;
-}
+}}
