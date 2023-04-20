@@ -44,6 +44,10 @@ h2 {
     list-style: none;
 }
 
+.nombre-estilo:focus{
+    background-color: #000;
+}
+
 .logo {
     display: flex;
 }
