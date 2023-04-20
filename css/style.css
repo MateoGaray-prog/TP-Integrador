@@ -275,6 +275,15 @@ textarea:hover,:focus{
     cursor: pointer;
 }
 
+#button[type="submit"]:hover{
+    background-color: #78866b;
+}
+
+#button[type="submit"]:active{
+    font-size: .8em;
+    background-color: #78866b;
+}
+
 .boton-enviar-mensaje {
     border: 0;
     cursor: pointer;
@@ -362,6 +371,9 @@ textarea:hover,:focus{
     font-family: 'Heebo', sans-serif;
 }
 
+.redes-personales a i{
+    margin: 5px;
+}
 /*----------------------------------------------------------------------------------*/
 
 .producto-agregar {
